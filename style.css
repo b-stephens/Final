@@ -1,3 +1,9 @@
+/****colors
+
+h1 blue-grey: #1b60a0
+em grey: #8b8b8b
+
+*****************/
 
 body {
     margin: 0;
@@ -14,9 +20,54 @@ hr {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 60px;
+    color: #1b60a0;
 }
+
+/************side nav**************/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/**************end side nav****************/
+
 
 .hero {
     background-image: url('../images/background.jpg');
@@ -59,13 +110,17 @@ h1 {
     clear: left;
 }
 
-.specials h1 {
+.specials h1, h2 {
     text-align: center;
 }
 
 .specials p {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
+}
+
+.specials hr {
+    width: 50%;
 }
 
 em {
@@ -77,10 +132,46 @@ em {
     width: 33%;
 }
 
+.special-col p {
+    padding: 0 10px;
+}
+
+
 .special-pic {
     padding: 15px;
 }
 
 .special-pic img {
     width: 100%;
+}
+
+.specials::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #d8d6d6;
+}
+
+footer h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #1b60a0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover {
+    color: #8b8b8b;
+}
+
+i {
+    margin: 10px;
+    color: #1b60a0;
 }
