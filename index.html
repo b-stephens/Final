@@ -26,14 +26,14 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="#">Food</a>
+      <a href="menu.html">Menu</a>
       <a href="#">Contact</a>
     </div>
     
     
 <div id="main">    
     <div class="hero">
-         <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+         <span style="font-size:30px;cursor:pointer; position: fixed;" onclick="openNav()">&#9776; Menu</span>
     </div>
     <div class="container">
         <div class="col-left">
@@ -58,13 +58,17 @@
     </div>
     <section class="chef">
         <div class="col-left">
-            <img class="chef-pic" src="images/chef.jpg" alt "chef"/>
+            <div class="inner">
+                <img class="chef-pic" src="images/chef.jpg" alt "chef"/>
+            </div>
         </div>
         <div class="col-left">
             <div class="description">
-                <h1>Since 1982</h1>
-                <h2><em>Bryan's Bistro is proud to be serving fine Italian<br>dishes for more than 30 years!</em></h2>
-                <hr>
+                <div class="inner">
+                    <h1>Since 1982</h1>
+                    <h2><em>Bryan's Bistro is proud to be serving fine Italian<br>dishes for more than 30 years!</em></h2>
+                    <hr>
+                </div>
             </div>
         </div>
     </section>
@@ -72,27 +76,27 @@
         <h1>Specials</h1>
         <h2><em>Check back daily for new specials!</em></h2>
         <hr>
-        <div class="special-col">
-            <div class="special-pic">
-                <img src="images/calamari.jpg" alt "calamari"/>
-                <p>Calamari with Pesto Sauce<span style="float: right";><em>$12.99</em></span></p>
-                <p><em>with fresh basil and pine nuts</em></p>
+            <div class="special-col">
+                <div class="special-pic">
+                    <img src="images/calamari.jpg" alt "calamari"/>
+                    <p>Calamari with Pesto Sauce<span style="float: right";><em>$12.99</em></span></p>
+                    <p><em>with fresh basil and pine nuts</em></p>
+                </div>
             </div>
-        </div>
-        <div class="special-col">
-            <div class="special-pic">
-                <img src="images/risotto.jpg" alt "risotto"/>
-                <p>Risotto with Jumbo Prawns<span style="float: right;"><em>$15.99</em></span></p>
-                <p><em>in a creamy garlic sauce</em></p>
+            <div class="special-col">
+                <div class="special-pic">
+                    <img src="images/risotto.jpg" alt "risotto"/>
+                    <p>Risotto with Jumbo Prawns<span style="float: right;"><em>$15.99</em></span></p>
+                    <p><em>in a creamy garlic sauce</em></p>
+                </div>
             </div>
-        </div>
-        <div class="special-col">
-            <div class="special-pic">
-                <img src="images/tortellini.jpg" alt "tortellini"/>
-                <p>Tortellini Alfredo<span style="float: right;"><em>$9.99</em></span></p>
-                <p><em>perfectly cooked pasta</em></p>
+            <div class="special-col">
+                <div class="special-pic">
+                    <img src="images/tortellini.jpg" alt "tortellini"/>
+                    <p>Tortellini Alfredo<span style="float: right;"><em>$9.99</em></span></p>
+                    <p><em>perfectly cooked pasta</em></p>
+                </div>
             </div>
-        </div>
     </section>
     <div class="footer">
         <h2>Bryan's Bistro</h2>
@@ -109,8 +113,8 @@
 </div>
     <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "200px";
 }
 
 function closeNav() {
