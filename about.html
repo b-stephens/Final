@@ -29,12 +29,8 @@
       <a href="#">Food</a>
       <a href="#">Contact</a>
     </div>
-    
-    
-<div id="main">    
-    <div class="hero">
-         <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
-    </div>
+       <span style="font-size:30px;cursor:pointer;position: fixed;" onclick="openNav()">&#9776; Menu</span>
+<div id="main">
     <div class="container">
         <div class="col-left">
             <div class="description">
@@ -68,30 +64,14 @@
             </div>
         </div>
     </section>
-    <section class="specials">
-        <h1>Specials</h1>
-        <h2><em>Check back daily for new specials!</em></h2>
-        <hr>
-        <div class="special-col">
-            <div class="special-pic">
-                <img src="images/calamari.jpg" alt "calamari"/>
-                <p>Calamari with Pesto Sauce<span style="float: right";><em>$12.99</em></span></p>
-                <p><em>with fresh basil and pine nuts</em></p>
-            </div>
+    <section class="reviews">
+        <h1>Happy Customers</h1>
+        <div class="col-left">
+            <div class="customer"></div>
+            <img src="images/quotation-left.png" alt="left-quote"/>
         </div>
-        <div class="special-col">
-            <div class="special-pic">
-                <img src="images/risotto.jpg" alt "risotto"/>
-                <p>Risotto with Jumbo Prawns<span style="float: right;"><em>$15.99</em></span></p>
-                <p><em>in a creamy garlic sauce</em></p>
-            </div>
-        </div>
-        <div class="special-col">
-            <div class="special-pic">
-                <img src="images/tortellini.jpg" alt "tortellini"/>
-                <p>Tortellini Alfredo<span style="float: right;"><em>$9.99</em></span></p>
-                <p><em>perfectly cooked pasta</em></p>
-            </div>
+        <div class="col-left">
+            <div class="customer"></div>
         </div>
     </section>
     <div class="footer">
@@ -108,15 +88,15 @@
     </div>
 </div>
     <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-</script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
 </html>

@@ -10,6 +10,11 @@ body {
     padding: 0;
 }
 
+#main {
+    transition: margin-left .5s;
+    
+}
+
 hr { 
   border: 0; 
   height: 1px; 
@@ -74,6 +79,8 @@ h1 {
     height: 700px;
     width: 100%;
     background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 
 .col-left {
@@ -86,8 +93,12 @@ h1 {
     padding: 0 50px;
 }
 
+.description h1 {
+    text-align: center;
+}
+
 .food {
-   width : 100%;
+   width: 100%;
 }
 
 .bruschetta {
@@ -150,6 +161,33 @@ em {
     display: block;
     clear: both;
 }
+
+/********start reviews*************/
+
+
+.reviews {
+    text-align: center;
+}
+
+.reviews::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.customer {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #000;
+    display: block;
+    margin: 0 auto;
+}
+
+.quote {
+  margin: 20px auto;  
+}
+/************start footer***********/
 
 .footer {
     text-align: center;
