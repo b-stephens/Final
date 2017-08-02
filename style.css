@@ -121,6 +121,8 @@ h1 {
     clear: left;
 }
 
+/********start specials**********/
+
 .specials h1, h2 {
     text-align: center;
 }
@@ -148,12 +150,14 @@ em {
 }
 
 
-.special-pic {
-    padding: 15px;
-}
+
 
 .special-pic img {
     width: 100%;
+}
+
+.special-pic {
+    padding: 15px;
 }
 
 .specials::after {
@@ -162,11 +166,42 @@ em {
     clear: both;
 }
 
+
+
+
+
+/******ABOUT US PAGE*************/
+
+/***********team**********/
+
+.team {
+    background-image: url('../images/chef3.jpg');
+   background-repeat: no-repeat;
+    height: 600px;
+    color: #fff;
+    text-align: center;
+}
+
+.team h1 {
+    margin: 0;
+    padding-top: 220px;
+    color: #FFF;
+}
+
+.team em {
+    color: #FFF;
+}
+
+
 /********start reviews*************/
 
 
-.reviews {
+.reviews h1 {
     text-align: center;
+}
+
+.reviews em {
+    font-size: 14px;
 }
 
 .reviews::after {
@@ -187,26 +222,77 @@ em {
 .quote {
   margin: 20px auto;  
 }
+
+.p-font {
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.inner {
+    padding: 0 50px;
+}
+
+/*************MENU*************/
+
+.menu {
+    background-image: url('../images/menu-background.jpg');
+    height: 600px;
+}
+
+.menu h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 200px;
+}
+
+.main-courses {
+    background-color: #e8e168;
+}
+
+.main-courses em {
+    color: #000;
+}
+
+.main-courses h2 {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.main-courses::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
 /************start footer***********/
 
 .footer {
     text-align: center;
     padding: 25px 0;
-    background-color: #d8d6d6;
+    background-color: #000;
 }
 
-footer h2 {
+.footer h2 {
     font-family: 'Cormorant Garamond', serif;
-    color: #1b60a0;
+    color: #fff !important;
 }
 
 .footer a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 footer a:hover {
     color: #8b8b8b;
+}
+
+.footer p{
+    color: #fff;
 }
 
 i {

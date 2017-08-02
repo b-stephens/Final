@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>Bryan's Bistro</title>
+<title>Bryan's Bistro | About</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
@@ -26,52 +26,36 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="#">Food</a>
+      <a href="menu.html">Menu</a>
       <a href="#">Contact</a>
     </div>
-       <span style="font-size:30px;cursor:pointer;position: fixed;" onclick="openNav()">&#9776; Menu</span>
+       <span style="font-size:30px; cursor:pointer; position: fixed; color: #a0a0a0;" onclick="openNav()">&#9776; Menu</span>
 <div id="main">
-    <div class="container">
-        <div class="col-left">
-            <div class="description">
-                <h1>Welcome to<br>Bryan's Bistro</h1>
-                <h2><em>The perfect place to get your grub on</em></h2>
-                <hr>
-                <p>Bryan's Bistro is a traditional Italian joint serving <em>the best dishes and drinks around!</em>  A definitive neighborhood spot offering a laid-back dining experience in a casual setting to guests from all walks of life.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida gravida elementum. Cras ut mi id lectus tempus vestibulum. Pellentesque varius varius odio et vulputate. Ut tincidunt sapien nec mi consectetur, vel viverra orci tristique. Morbi mattis ipsum nisi, eu laoreet orci tempus nec. Ut quis luctus purus. Nunc pulvinar nunc vulputate ante efficitur imperdiet. Vestibulum euismod nec ligula non eleifend. Etiam gravida arcu non nulla tincidunt, sodales aliquam sapien feugiat. Duis hendrerit odio eu est aliquam sollicitudin. Nam ac lorem id nibh bibendum ultrices at et turpis. Phasellus laoreet sed neque ut molestie.
-                </p>
-            </div>
-        </div>
-        <div class="col-left">
-            <div class="col-left">
-                <img class="food" src="images/spaghetti.jpg" alt "spaghetti"/>
-                <img class="food" src="images/pizza.jpg" alt "pizza"/>
-            </div>
-            <div class="col-left">
-                <img class="bruschetta" src="images/bruschetta.jpg" alt "bruschetta"/>
-            </div>
-        </div>
-    </div>
-    <section class="chef">
-        <div class="col-left">
-            <img class="chef-pic" src="images/chef.jpg" alt "chef"/>
-        </div>
-        <div class="col-left">
-            <div class="description">
-                <h1>Since 1982</h1>
-                <h2><em>Bryan's Bistro is proud to be serving fine Italian<br>dishes for more than 30 years!</em></h2>
-                <hr>
-            </div>
-        </div>
+    
+    <section class="team">
+        <h1>About Us</h1>
+        <p class="p-font">Bryan's Bistro is a family owned restaurant which treasures the atmosphere just as much<br> as the dining menu. <em>We've assembled a strong team of professionals,<br> all of whom aspire to constantly excel!</em></p>
     </section>
+    
     <section class="reviews">
         <h1>Happy Customers</h1>
         <div class="col-left">
-            <div class="customer"></div>
-            <img src="images/quotation-left.png" alt="left-quote"/>
+            <div class="inner">
+                <div class="customer">
+                    <img src="images/woman.jpg" alt="woman"/>
+                </div>
+                <img class="quote"src="images/quotation-left.png" alt="left-quote"/>
+                <p class="p-font">I've been eating their business lunches for the past 7 years. Not even once have I had any unpleasant experience. And the dishes always taste fresh and good!<br><br>-Jane<br><em>posted on Trip Advisor</em></p>
+            </div>
         </div>
         <div class="col-left">
-            <div class="customer"></div>
+            <div class="inner">
+                <div class="customer">
+                    <img src="images/man.jpg" alt="man"/>
+                </div>
+                <img class="quote" src="images/quotation-left.png" alt="left-quote"/>
+                <p class="p-font">The prices are as good as the menu! Each time I spend less money than anywhere else and get a fresh, tasty, homemade dinner!<br><br>-John<br><em>posted on foursquare</em></p>
+            </div>
         </div>
     </section>
     <div class="footer">
@@ -89,8 +73,8 @@
 </div>
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("mySidenav").style.width = "200px";
+            document.getElementById("main").style.marginLeft = "200px";
         }
         
         function closeNav() {
